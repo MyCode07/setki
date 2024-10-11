@@ -6,11 +6,15 @@ const menu = document.querySelector('.header nav');
 const menuMobile = document.querySelector('.menu');
 const allMenuLinks = document.querySelectorAll('nav ul li a');
 const menuCloseBtn = document.querySelector('._close');
+const headerTop = document.querySelector('.header__top')
+
+
 if (burger) {
     burger.addEventListener('click', (e) => {
         menu.classList.toggle('_open');
         menuMobile.classList.toggle('_open');
         burger.classList.toggle('_active');
+        headerTop.classList.toggle('_active')
 
         if (menu.classList.contains('_open')) {
             // lockPadding();
@@ -26,6 +30,7 @@ if (menuCloseBtn) {
     menuCloseBtn.addEventListener('click', (e) => {
         menu.classList.remove('_open');
         burger.classList.remove('_open');
+        headerTop.classList.remove('_active')
         unLockPadding();
     })
 }
@@ -86,22 +91,3 @@ if (submenuList.length) {
         }
     }
 }
-
-
-
-document.addEventListener('click', function (e) {
-    let targetEl = e.target;
-
-    if (!targetEl.closest('li[data-open]') && !targetEl.closest('nav') && document.querySelector('li[data-open]')) {
-        document.querySelector('li[data-open]').removeAttribute('data-open')
-    }
-
-    if (targetEl.classList.contains('header__lang')) {
-        targetEl.classList.toggle('_active');
-    }
-
-    if (!targetEl.closest('header__lang') && !targetEl.classList.contains('header__lang') && document.querySelector('.header__lang._active')) {
-        document.querySelector('.header__lang._active').classList.remove('_active')
-    }
-})
-

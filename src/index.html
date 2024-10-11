@@ -5,16 +5,37 @@
 @@include('./html/header.html')
 
 <main>
+
     <section class="hero">
-        <div class="hero__container _container">
+        <div class="bgi">
+            <img src="img/hero-bgi.png" alt="">
+        </div>
+        <div class="hero__container ">
             <div class="hero__body">
                 <div class="hero__content">
-                    <h1>Детский игровой центр под ключ</h1>
-                    <p class="_subtitle">Рассчитываем окупаемость, проектируем, производим и монтируем самое современное
-                        и качественное
-                        оборудование по лучшим
-                        ценам и в кратчайшие сроки</p>
-                    <button class="_btn _btn-accent">Рассчитать стоимость проекта</button>
+                    <h1>Москитные сетки плиссе в Москве <br><b>от производителя</b></h1>
+                    <p>Забудьте о назойливых насекомых, пыли и аллергенах! <b>Москитные сетки Плиссе</b> – это
+                        инновационное решение, которое не только эффективно защищает ваш дом, но и придает ему
+                        элегантный вид.</p>
+
+                    <ol>
+                        <b>Она идеально подходит для:</b>
+                        <li>больших окон</li>
+                        <li>балконов</li>
+                        <li>дверей</li>
+                        <li>а также нестандартных проемов</li>
+                    </ol>
+                    <div>
+                        <button class="_btn _btn-big _btn-white">
+                            <span>Заказать замер</span>
+                            <div>
+                                <svg width="12" height="12" viewBox="0 0 12 12">
+                                    <use xlink:href="img/svg/icons.svg#btn-arrow"></use>
+                                </svg>
+                            </div>
+                        </button>
+                        <a href="">Рассчитать стоимость</a>
+                    </div>
                 </div>
                 <div class="hero__image">
                     <img src="img/hero.png" alt="">
@@ -23,562 +44,63 @@
         </div>
     </section>
 
-    <section class="section about">
+    <section class="section production">
         <div class="section__container _container">
             <div class="section__body">
-                <div class="section__top">
-                    <label>О компании</label>
-                    <h2>Мы международную компанию с более чем 12-летним опытом в проектировании и создании детских
-                        игровых комплексов с
-                        <span>собственным производства в России и Китае.</span>
-                    </h2>
-                    <p>Наша главная цель - исходя из ваших желаний, создать действительно уникальный проект, который
-                        позволит вам достигнуть
-                        всех финансовых и творческих целей.</p>
-                </div>
-
-                <div class="scroll-wrapper">
-                    <div class="grid grid-4">
-                        <div class="about-item">
-                            <img src="img/icons/about-1.svg" alt="">
-                            <h4>12+ <br> лет работы</h4>
-                            <p>Большой опыт в производстве и запуске проектов любой сложности.</p>
+                <h2>Наша продукция</h2>
+                <div class="grid grid-3">
+                    <div class="production-card">
+                        <div class="production-card__image">
+                            <img src="img/production-1.png" alt="">
                         </div>
-                        <div class="about-item">
-                            <img src="img/icons/about-2.svg" alt="">
-                            <h4>400+<br> госзаказа</h4>
-                            <p>Высокий уровень компетенции в работе с госзаказчиками.</p>
-                        </div>
-                        <div class="about-item">
-                            <img src="img/icons/about-1.svg" alt="">
-                            <h4>10000+<br> проектов</h4>
-                            <p>Указывает на нашу популярность и доверие к компании.</p>
-                        </div>
-                        <div class="about-item">
-                            <img src="img/icons/about-2.svg" alt="">
-                            <h4>100+ <br> специалистов</h4>
-                            <p>Команда экспертов, которые обеспечат высокий уровень сервиса.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="section advantages">
-        <div class="section__container _container">
-            <div class="section__body">
-                <div class="section__top">
-                    <div class="section__top-flex">
-                        <h2>Наши преимущества</h2>
-                        <div class="navigation">
-                            <button class="prev">
-                                <svg width="17" height="15" viewBox="0 0 17 15">
-                                    <use xlink:href='img/svg/icons.svg#slider-arrow' />
-                                </svg>
-                            </button>
-                            <button class="next">
-                                <svg width="17" height="15" viewBox="0 0 17 15">
-                                    <use xlink:href='img/svg/icons.svg#slider-arrow' />
-                                </svg>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <img src="img/icons/advantages-1.svg" alt="">
-                            <h3>Цены ниже рыночного на 10-15%</h3>
-                            <p>Наши цены на игровые центры ниже рынкана 10-15% за счет собственного производства</p>
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="img/icons/advantages-2.svg" alt="">
-                            <h3>Современные технологии</h3>
-                            <p>Используем передовые технологии и сертифицированные материалы, обеспечивая
-                                долговечность и
-                                безопасность.</p>
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="img/icons/advantages-3.svg" alt="">
-                            <h3>Лицензия на всю продукцию</h3>
-                            <p>Самое главное для нас безопасность детей, мы соблюдаем все госты, регламенты и
-                                нормативные акты.</p>
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="img/icons/advantages-4.svg" alt="">
-                            <h3>Полный цикл разработки</h3>
-                            <p>Ведем проект от концепции до финального монтажа, создавая прибыльные и востребованные
-                                пространства.</p>
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="img/icons/advantages-5.svg" alt="">
-                            <h3>Индивидуальный подход</h3>
-                            <p>Разрабатываем уникальные проекты, учитывая ваши пожелания и рыночные условия.</p>
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="img/icons/advantages-6.svg" alt="">
-                            <h3>Поддержка на всех этапах</h3>
-                            <p>Сопровождаем ваш проект от идеи до запуска, предлагая консультации и разработку
-                                финансовой
-                                модели.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="section action">
-        <div class="section__container _container">
-            <div class="section__body">
-                <div class="action-item">
-                    <p>Рассчитаем финансовую модель на 10 лет, спроектируем и изготовим самое качественное и
-                        современное оборудование, доставим
-                        и смантируем в самые короткие сроки!</p>
-                    <button class="_btn _btn-white" data-open-popup data-id="callback">Получить готовое решение</button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="section projects" data-tabs-area>
-        <div class="section__container _container">
-            <div class="section__body">
-                <div class="section__top">
-                    <h2>Наши проекты</h2>
-                    <div class="section__top-flex">
-                        <p>Работаем более 12 лет. За это время мы поставили более 15000 единиц игрового оборудования по
-                            всей России и СНГ</p>
-                        <div class="tabs">
-                            <button data-tab="1" class="_active">Изображения</button>
-                            <button data-tab="2">3Д модели</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="tabs-content">
-                    <div data-tab-content="1" class="_active">
-                        <div class="grid grid-3">
-                            <a href="img/comply.png" class="projects-item" data-fancybox="projects-3d">
-                                <img src="img/comply.png" alt="">
-                            </a>
-                            <a href="img/comply.png" class="projects-item" data-fancybox="projects-3d">
-                                <img src="img/comply.png" alt="">
-                            </a>
-                            <a href="img/comply.png" class="projects-item" data-fancybox="projects-3d">
-                                <img src="img/comply.png" alt="">
-                            </a>
-                            <a href="img/comply.png" class="projects-item" data-fancybox="projects-3d">
-                                <img src="img/comply.png" alt="">
-                            </a>
-                            <a href="img/comply.png" class="projects-item" data-fancybox="projects-3d">
-                                <img src="img/comply.png" alt="">
-                            </a>
-                            <a href="img/comply.png" class="projects-item" data-fancybox="projects-3d">
-                                <img src="img/comply.png" alt="">
-                            </a>
-                        </div>
-                    </div>
-                    <div data-tab-content="2">
-                        <div class="grid grid-3">
-                            <a href="img/comply.png" class="projects-item" data-fancybox="projects-3d">
-                                <img src="img/comply.png" alt="">
-                            </a>
-                            <a href="img/comply.png" class="projects-item" data-fancybox="projects-3d">
-                                <img src="img/comply.png" alt="">
-                            </a>
-                            <a href="img/comply.png" class="projects-item" data-fancybox="projects-3d">
-                                <img src="img/comply.png" alt="">
-                            </a>
-                            <a href="img/comply.png" class="projects-item" data-fancybox="projects-3d">
-                                <img src="img/comply.png" alt="">
-                            </a>
-                            <a href="img/comply.png" class="projects-item" data-fancybox="projects-3d">
-                                <img src="img/comply.png" alt="">
-                            </a>
-                            <a href="img/comply.png" class="projects-item" data-fancybox="projects-3d">
-                                <img src="img/comply.png" alt="">
-                            </a>
-                        </div>
-                    </div>
-                    <button class="_btn _btn-border show-more">Загрузить еще</button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="section important">
-        <div class="section__container _container">
-            <div class="section__body">
-                <div class="kid">
-                    <img src="img/kid.png" alt="">
-                </div>
-                <div class="important__box">
-                    <div class="section__top">
-                        <h2>Самое главное для нас <br> это безопасность детей</h2>
-                        <p class="_subtitle">Дизайнеры международного уровня создают индивидуальный дизайн, делая Ваш
-                            проект единственным
-                            в своем роде. </p>
-                        <button class="_btn _btn-white" data-open-popup data-id="zayavka">оставить заявку</button>
-                    </div>
-                    <img class="important-decor" src="img/important-decor.svg" alt="">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="section steps">
-        <div class="section__container _container">
-            <div class="section__body">
-                <div class="section__top">
-                    <h2>От идеи до запуска</h2>
-                </div>
-                <div class="accordion grid grid-3" data-accordion data-width="10000">
-                    <div class="accordion__item" data-accordion-item>
-                        <div class="accordion__item-title" data-accordion-title>
-                            <label>этап 1</label>
-                            <div>
-                                <p>Знакомство<br>и планирование</p>
-                                <span class="icon">
-                                    <svg width="18" height="17" viewBox="0 0 18 17">
-                                        <use xlink:href='img/svg/icons.svg#close' />
-                                    </svg>
-                                </span>
-                            </div>
-                        </div>
-                        <div class="accordion__item-content" data-accordion-content>
-                            <div class="accordion__item-content-height">
+                        <div class="production-card__info">
+                            <h3>Сетка на окно</h3>
+                            <a href="" class="_btn">
+                                <span>Рассчитать стоимость</span>
                                 <div>
-                                    <p>Первый шаг — это знакомство с вашим персональным менеджером. Мы детально
-                                        обсуждаем ваши идеи, цели и
-                                        бюджет, чтобы
-                                        разработать оптимальное решение для вашего проекта.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion__item" data-accordion-item>
-                        <div class="accordion__item-title" data-accordion-title>
-                            <label>этап 2</label>
-                            <div>
-                                <p>Разработка <br>финансовой модели</p>
-                                <span class="icon">
-                                    <svg width="18" height="17" viewBox="0 0 18 17">
-                                        <use xlink:href='img/svg/icons.svg#close' />
+                                    <svg width="12" height="12" viewBox="0 0 12 12">
+                                        <use xlink:href="img/svg/icons.svg#btn-arrow"></use>
                                     </svg>
-                                </span>
-                            </div>
-                        </div>
-                        <div class="accordion__item-content" data-accordion-content>
-                            <div class="accordion__item-content-height">
-                                <div>
-                                    <p>Первый шаг — это знакомство с вашим персональным менеджером. Мы детально
-                                        обсуждаем ваши идеи, цели и
-                                        бюджет, чтобы
-                                        разработать оптимальное решение для вашего проекта.</p>
                                 </div>
-                            </div>
+                            </a>
                         </div>
                     </div>
-                    <div class="accordion__item" data-accordion-item>
-                        <div class="accordion__item-title" data-accordion-title>
-                            <label>этап 3</label>
-                            <div>
-                                <p>Консультации <br>и подбор оборудования</p>
-                                <span class="icon">
-                                    <svg width="18" height="17" viewBox="0 0 18 17">
-                                        <use xlink:href='img/svg/icons.svg#close' />
+                    <div class="production-card">
+                        <div class="production-card__image">
+                            <img src="img/production-2.png" alt="">
+                        </div>
+                        <div class="production-card__info">
+                            <h3>Сетка на дверь</h3>
+                            <a href="" class="_btn">
+                                <span>Рассчитать стоимость</span>
+                                <div>
+                                    <svg width="12" height="12" viewBox="0 0 12 12">
+                                        <use xlink:href="img/svg/icons.svg#btn-arrow"></use>
                                     </svg>
-                                </span>
-                            </div>
-                        </div>
-                        <div class="accordion__item-content" data-accordion-content>
-                            <div class="accordion__item-content-height">
-                                <div>
-                                    <p>Первый шаг — это знакомство с вашим персональным менеджером. Мы детально
-                                        обсуждаем ваши идеи, цели и
-                                        бюджет, чтобы
-                                        разработать оптимальное решение для вашего проекта.</p>
                                 </div>
-                            </div>
+                            </a>
                         </div>
                     </div>
-                    <div class="accordion__item" data-accordion-item>
-                        <div class="accordion__item-title" data-accordion-title>
-                            <label>этап 4</label>
-                            <div>
-                                <p>Проектирование <br>и производство</p>
-                                <span class="icon">
-                                    <svg width="18" height="17" viewBox="0 0 18 17">
-                                        <use xlink:href='img/svg/icons.svg#close' />
+                    <div class="production-card">
+                        <div class="production-card__image">
+                            <img src="img/production-3.png" alt="">
+                        </div>
+                        <div class="production-card__info">
+                            <h3>Сетка на проем</h3>
+                            <a href="" class="_btn">
+                                <span>Рассчитать стоимость</span>
+                                <div>
+                                    <svg width="12" height="12" viewBox="0 0 12 12">
+                                        <use xlink:href="img/svg/icons.svg#btn-arrow"></use>
                                     </svg>
-                                </span>
-                            </div>
-                        </div>
-                        <div class="accordion__item-content" data-accordion-content>
-                            <div class="accordion__item-content-height">
-                                <div>
-                                    <p>Первый шаг — это знакомство с вашим персональным менеджером. Мы детально
-                                        обсуждаем ваши идеи, цели и
-                                        бюджет, чтобы
-                                        разработать оптимальное решение для вашего проекта.</p>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion__item" data-accordion-item>
-                        <div class="accordion__item-title" data-accordion-title>
-                            <label>этап 5</label>
-                            <div>
-                                <p>Доставка <br> и монтаж</p>
-                                <span class="icon">
-                                    <svg width="18" height="17" viewBox="0 0 18 17">
-                                        <use xlink:href='img/svg/icons.svg#close' />
-                                    </svg>
-                                </span>
-                            </div>
-                        </div>
-                        <div class="accordion__item-content" data-accordion-content>
-                            <div class="accordion__item-content-height">
-                                <div>
-                                    <p>Первый шаг — это знакомство с вашим персональным менеджером. Мы детально
-                                        обсуждаем ваши идеи, цели и
-                                        бюджет, чтобы
-                                        разработать оптимальное решение для вашего проекта.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <button data-open-popup data-id="callback">Получить готовое решение</button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="section video">
-        <video src="" poster="img/video.png">
-            <source>
-        </video>
-        <div class="section__container _container">
-            <div class="section__body">
-                <h2>Готовые лабиринты в наличии на нашем складе и под заказ</h2>
-                <p class="_subtitle">Узнайте наличие по нужным позициям за 60 секунд!</p>
-                <button class="_btn _btn-accent">Узнать наличие</button>
-            </div>
-        </div>
-    </section>
-
-
-    <section class="section team">
-        <div class="section__container _container">
-            <div class="section__body">
-                <div class="section__top">
-                    <div class="section__top-flex">
-                        <h2>Наша команда</h2>
-                        <div class="navigation">
-                            <button class="prev">
-                                <svg width="17" height="15" viewBox="0 0 17 15">
-                                    <use xlink:href='img/svg/icons.svg#slider-arrow' />
-                                </svg>
-                            </button>
-                            <button class="next">
-                                <svg width="17" height="15" viewBox="0 0 17 15">
-                                    <use xlink:href='img/svg/icons.svg#slider-arrow' />
-                                </svg>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <img src="img/team.png" alt="">
-                            <label>Вероника</label>
-                            <span>Руководитель тендерного отдела</span>
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="img/team.png" alt="">
-                            <label>Вероника</label>
-                            <span>Руководитель тендерного отдела</span>
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="img/team.png" alt="">
-                            <label>Вероника</label>
-                            <span>Руководитель тендерного отдела</span>
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="img/team.png" alt="">
-                            <label>Вероника</label>
-                            <span>Руководитель тендерного отдела</span>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
-    <section class="section unique">
-        <div class="section__container _container">
-            <div class="section__body">
-                <div class="section__top">
-                    <h3>Каждый проект уникальный</h3>
-                    <p class="_subtitle">Дизайнеры международного уровня создают индивидуальный дизайн делая ваш проект
-                        единственным в
-                        своём роде</p>
-                    <button class="_btn _btn-white" data-open-popup data-id="callback">Оставить заявку</button>
-                    <img src="img/icons/comply-decor.svg" alt="">
-                </div>
-                <div class="image">
-                    <img src="img/unique.png" alt="">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="section reviews">
-        <div class="section__container _container">
-            <div class="section__body">
-                <div class="section__top">
-                    <div class="section__top-flex">
-                        <h2>Что говорят о нас</h2>
-                        <div class="navigation">
-                            <button class="prev">
-                                <svg width="17" height="15" viewBox="0 0 17 15">
-                                    <use xlink:href='img/svg/icons.svg#slider-arrow' />
-                                </svg>
-                            </button>
-                            <button class="next">
-                                <svg width="17" height="15" viewBox="0 0 17 15">
-                                    <use xlink:href='img/svg/icons.svg#slider-arrow' />
-                                </svg>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div>
-                                <label>Игорь Дмитриев</label>
-                                <span>Дубна</span>
-                                <img src="img/icons/review-stars.svg" alt="">
-                            </div>
-                            <p>Обратились в компанию "Звездное детство" для заказа детской игровой комнаты, которую
-                                планировали открывать в г. Дубна.
-                                Проработали все быстро - начиная от дизайн-проекта игровой комнаты, заканчивая
-                                консультированием по монтажу игровой
-                                площадки. Изготовили все в срок, даже раньше того, что обещали по договору. У нас даже
-                                ремонт помещения еще не
-                                закончился тогда.</p>
-                        </div>
-                        <div class="swiper-slide">
-                            <div>
-                                <label>Игорь Дмитриев</label>
-                                <span>Дубна</span>
-                                <img src="img/icons/review-stars.svg" alt="">
-                            </div>
-                            <p>Обратились в компанию "Звездное детство" для заказа детской игровой комнаты, которую
-                                планировали открывать в г. Дубна.
-                                Проработали все быстро - начиная от дизайн-проекта игровой комнаты, заканчивая
-                                консультированием по монтажу игровой
-                                площадки. Изготовили все в срок, даже раньше того, что обещали по договору. У нас даже
-                                ремонт помещения еще не
-                                закончился тогда.</p>
-                        </div>
-                        <div class="swiper-slide">
-                            <div>
-                                <label>Игорь Дмитриев</label>
-                                <span>Дубна</span>
-                                <img src="img/icons/review-stars.svg" alt="">
-                            </div>
-                            <p>Обратились в компанию "Звездное детство" для заказа детской игровой комнаты, которую
-                                планировали открывать в г. Дубна.
-                                Проработали все быстро - начиная от дизайн-проекта игровой комнаты, заканчивая
-                                консультированием по монтажу игровой
-                                площадки. Изготовили все в срок, даже раньше того, что обещали по договору. У нас даже
-                                ремонт помещения еще не
-                                закончился тогда.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="section certs">
-        <div class="section__container _container">
-            <div class="section__body">
-                <div class="section__top">
-                    <h2>Наши гсертификаты</h2>
-                    <p class="_subtitle">Вся производимая нами продукция имеет сертификаты, дающие возможность
-                        применения в
-                        детскийучереждених.</p>
-                </div>
-                <div class="flex">
-                    <a href="img/cert.png" data-fancybox="certs">
-                        <img src="img/cert.png" alt="">
-                    </a>
-                    <a href="img/cert.png" data-fancybox="certs">
-                        <img src="img/cert.png" alt="">
-                    </a>
-                    <a href="img/cert.png" data-fancybox="certs">
-                        <img src="img/cert.png" alt="">
-                    </a>
-                    <a href="img/cert.png" data-fancybox="certs">
-                        <img src="img/cert.png" alt="">
-                    </a>
-                    <a href="img/cert.png" data-fancybox="certs">
-                        <img src="img/cert.png" alt="">
-                    </a>
-                    <a href="img/cert.png" data-fancybox="certs">
-                        <img src="img/cert.png" alt="">
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-
-    <section class="section form-block">
-        <div class="section__container _container">
-            <div class="section__body">
-                <div class="section__top">
-                    <h2>Нестандартная задача?</h2>
-                    <p>Опишите в двух словах Вашу задачу. <br>
-                        Наш менеджер свяжется в течение 15 минут предложит несколько интересных вариантов. Это
-                        бесплатно и ни к чему не
-                        обязывает, но у Вас будет на руках возможное решение.</p>
-                </div>
-                <div class="form form-white">
-                    <form action="">
-                        <div class="form__row">
-                            <div class="form__item" data-required>
-                                <input type="text" name="name" placeholder="Имя">
-                            </div>
-                            <div class="form__item" data-required>
-                                <input type="text" name="phone"  class="_mask-phone" placeholder="Телефон">
-                            </div>
-                        </div>
-                        <div class="form__item" data-required>
-                            <textarea name="msg" id="msg" placeholder="Сообщение"></textarea>
-                        </div>
-                        <div class="form__bottom">
-                            <button class="_btn _btn-border"> Отправить</button>
-                            <label>Нажимая кнопку «Отправить», я даю свое согласие на обработку моих<a
-                                    href="/privacy-policy/">персональных
-                                    данных.</a> </label>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-
-
-
 </main>
 
 @@include('./html/footer.html')
