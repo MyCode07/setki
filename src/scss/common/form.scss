@@ -1,0 +1,148 @@
+.form {
+    // .form__row
+
+    &__row {
+        display: flex;
+        gap: 10px;
+
+        @media (max-width: 768px) {
+            flex-direction: column;
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 10px;
+        }
+
+        @media (min-width: 769px) {
+            .form__item {
+                width: calc(50% - 5px);
+            }
+        }
+    }
+
+    // .form__item
+
+    &__item {
+        border: 2px solid rgba($color: $black, $alpha: 0.25);
+        border-radius: 100px;
+
+        &:has(textarea) {
+            border-radius: 30px;
+
+            @media (max-width: 768px) {
+                border-radius: 20px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            border-width: 1px;
+        }
+
+        input,
+        textarea {
+            padding: 20px;
+
+            &::placeholder {
+                color: rgba($color: $black, $alpha: 0.5);
+            }
+        }
+
+        input {
+            height: 65px;
+
+            @media (max-width: 768px) {
+                height: 50px;
+            }
+        }
+
+        textarea {
+            height: 130px;
+            resize: none;
+
+            @media (max-width: 768px) {
+                height: 110px;
+            }
+        }
+
+        &[data-required] {
+            position: relative;
+
+            &:before {
+                position: absolute;
+                content: "*";
+                right: 20px;
+                top: 25px;
+
+                @media (max-width: 768px) {
+                    top: 18px;
+                }
+            }
+        }
+    }
+
+    // .form__bottom
+
+    &__bottom {
+        margin-top: 60px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+
+        @media (max-width: 768px) {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        ._btn {
+            height: 65px;
+            width: 100%;
+
+            @media (max-width: 768px) {
+                height: 50px;
+            }
+        }
+
+        label {
+            font-size: 14px;
+            font-weight: 400;
+
+            @media (max-width: 768px) {
+                font-size: 12px;
+            }
+
+            a {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    // .form-white
+
+    &-white {
+        color: $white;
+
+        .form__item {
+            border-color: rgba($color: $white, $alpha: 0.25);
+
+            input,
+            textarea {
+                &::placeholder {
+                    color: rgba($color: $white, $alpha: 0.5);
+                }
+            }
+        }
+
+        ._btn {
+            color: $white;
+
+            @media (any-hover: hover) {
+                &:hover {
+                    background-color: $white;
+                    color: $accent;
+                }
+            }
+        }
+    }
+}
