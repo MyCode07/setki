@@ -85,6 +85,12 @@ h3 {
 }
 
 h4 {
+    @include adaptive-value("font-size", 26, 20, 1);
+}
+
+h5 {
+    @include adaptive-value("font-size", 26, 20, 1);
+    font-weight: 700;
 }
 
 p {
@@ -166,8 +172,7 @@ input[type="number"] {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 4px 4px 4px 20px;
-    gap: 20px;
+    padding: 4px;
     border-radius: 60px;
     border: 1px solid currentColor;
 
@@ -207,8 +212,7 @@ input[type="number"] {
 
     &-big {
         height: 73px;
-        padding: 10px 10px 10px 60px;
-        gap: 42px;
+        padding: 10px;
         width: fit-content;
 
         span {
@@ -218,6 +222,16 @@ input[type="number"] {
         @media (max-width: 1024px) {
             height: 60px;
             width: 100%;
+        }
+
+        div {
+            width: 53px;
+            height: 53px;
+
+            @media (max-width: 1024px) {
+                height: 50px;
+                width: 50px;
+            }
         }
     }
 
@@ -229,18 +243,24 @@ input[type="number"] {
         border: unset;
 
         div {
-            width: 53px;
-            height: 53px;
             background-color: $black;
-
-            @media (max-width: 1024px) {
-                height: 50px;
-                width: 50px;
-            }
-
             svg {
                 fill: $white;
             }
         }
+    }
+
+    // ._btn-accent
+
+    &-accent {
+        background-color: $accent;
+        border: unset;
+    }
+
+    // ._btn-black
+
+    &-black {
+        background-color: $black;
+        border: unset;
     }
 }

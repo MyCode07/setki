@@ -54,15 +54,204 @@
             fill: $white;
         }
 
-        @media (max-width: 1024px) {
+        @media (max-width: 1100px) {
             padding: 17px 22px;
-            div {
-                display: none;
-            }
 
             span {
                 font-size: 14px;
             }
+
+            div {
+                display: none;
+            }
         }
+    }
+}
+
+.variants-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    background: $white;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+
+    @media (max-width: 1024px) {
+        border-radius: 5px;
+        padding: 8px;
+        gap: 16px;
+    }
+
+    img,
+    svg {
+        width: 100%;
+        height: 224px;
+
+        @media (max-width: 1024px) {
+            height: 181px;
+        }
+    }
+
+    span {
+        color: $black;
+        font-size: 26px;
+        font-weight: 700;
+        line-height: 1.15;
+        text-transform: uppercase;
+
+        @media (max-width: 1024px) {
+            font-size: 20px;
+        }
+    }
+}
+
+.colors-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    @include adaptive-value("height", 197, 98, 1);
+
+    @media (max-width: 1024px) {
+        border-radius: 10px;
+    }
+
+    label {
+        color: $white;
+        @include adaptive-value("font-size", 25, 12, 1);
+        font-style: normal;
+        font-weight: 700;
+        line-height: 14.2;
+        text-transform: uppercase;
+    }
+
+    &.white {
+        background-color: $white;
+
+        label {
+            color: $black;
+        }
+    }
+
+    &.brown {
+        background-color: #4d3d2e;
+    }
+
+    &.anthracite {
+        background-color: #3d3d3d;
+    }
+
+    &.last {
+        background: linear-gradient(84deg, #7a2c97 0%, #b1416e 49.16%, #e15548 100%);
+    }
+}
+
+.about-card {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 20px;
+    border: 1px solid $white;
+    overflow: hidden;
+
+    @media (max-width: 1024px) {
+        border-radius: 10px;
+        flex-direction: column;
+    }
+
+    &:not(:last-child) {
+        margin-bottom: 20px;
+    }
+
+    // .about-card__info
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        height: auto;
+        width: 50%;
+
+        @media (min-width: 1025px) {
+            padding: 10px 40px;
+        }
+
+        @media (max-width: 1024px) {
+            gap: 10px;
+            padding: 10px;
+            width: 100%;
+        }
+
+        h3 {
+            color: $white;
+
+            @media (max-width: 1024px) {
+                text-align: center;
+                width: 100%;
+                display: block;
+            }
+        }
+
+        button {
+            margin-top: 10px;
+            width: 100%;
+        }
+
+        ol {
+            li {
+                position: relative;
+                padding-left: 20px;
+
+                &:not(:last-child) {
+                    margin-bottom: 12px;
+
+                    @media (max-width: 1024px) {
+                        margin-bottom: 5px;
+                    }
+                }
+
+                &:before {
+                    position: absolute;
+                    content: "";
+                    left: 0;
+                    top: 5px;
+                    width: 10px;
+                    height: 10px;
+                    background-color: $accent;
+                    border-radius: 50px;
+                }
+            }
+        }
+    }
+
+    // .about-card__image
+
+    &__image {
+        width: 50%;
+        border-radius: 20px;
+        overflow: hidden;
+
+        @media (max-width: 1024px) {
+            border-radius: 10px;
+            width: 100%;
+        }
+
+        img {
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+._btn {
+    // ._btn-big
+
+    &-big {
+    }
+
+    // ._btn-white
+
+    &-white {
     }
 }
