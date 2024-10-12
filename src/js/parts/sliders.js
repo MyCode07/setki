@@ -26,30 +26,10 @@ if (sliders.length) {
             })
         }
 
-        if (slider.closest('.team')) {
-            new Swiper(slider, {
-                modules: [Navigation],
-                navigation: {
-                    prevEl: prev,
-                    nextEl: next,
-                },
-                grabCursor: true,
-                breakpoints: {
-                    300: {
-                        spaceBetween: 20,
-                        slidesPerView: 'auto',
-                    },
-                    1025: {
-                        spaceBetween: 30,
-                        slidesPerView: 3,
-                    },
-                }
-            })
-        }
-
         if (slider.closest('.reviews')) {
             new Swiper(slider, {
                 modules: [Autoplay, Navigation],
+                slidesPerView: 2,
                 autoplay: {
                     delay: 3000,
                     pauseOnMouseEnter: true
@@ -61,16 +41,34 @@ if (sliders.length) {
                 grabCursor: true,
                 breakpoints: {
                     300: {
-                        spaceBetween: 20,
-                        slidesPerView: 'auto',
+                        spaceBetween: 10,
+                        slidesPerView: 1,
                     },
                     1025: {
-                        spaceBetween: 30,
+                        spaceBetween: 20,
                         slidesPerView: 2,
                     },
                 }
             })
         }
+
+        if (slider.closest('.manufacturing') && window.innerWidth <= 1024) {
+            new Swiper(slider, {
+                modules: [Autoplay, Pagination],
+                slidesPerView: 1,
+                spaceBetween: 10,
+                autoplay: {
+                    delay: 3000,
+                    pauseOnMouseEnter: true
+                },
+                pagination: {
+                    el: pagination,
+                    type: 'bullets',
+                    clickable: true,
+                },
+            })
+        }
+
     })
 }
 

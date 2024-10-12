@@ -244,3 +244,38 @@
         }
     }
 }
+
+.review-card {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    border-radius: 20px;
+    background-color: #d3cecd;
+    padding: 40px;
+
+    @media (max-width: 1024px) {
+        gap: 15px;
+        padding: 15px 10px;
+        border-radius: 10px;
+    }
+
+    // .review-card__top
+
+    &__top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        b {
+            color: $black;
+        }
+        time {
+            color: #616465;
+        }
+    }
+
+    // .review-card__bottom
+
+    &__bottom {
+        color: $black;
+    }
+}
