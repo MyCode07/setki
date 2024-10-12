@@ -488,44 +488,214 @@
 }
 
 .works {
-    .swiper-wrapper {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: 250px;
-        gap: 20px;
-
-        a {
-            display: block;
+    a {
+        display: block;
+        height: 100%;
+        img {
             height: 100%;
-            img {
-                height: 100%;
-                object-fit: cover;
-                border-radius: 10px;
+            object-fit: cover;
+            border-radius: 10px;
+
+            @media (max-width: 1024px) {
+                border-radius: 5px;
             }
         }
 
-        & > :first-child,
-        & > :nth-child(4),
-        & > :nth-child(6) {
-            grid-row: span 1;
+        @media (max-width: 1024px) {
+            @include adaptive-value("height", 400, 220, 1);
+        }
+    }
+
+    @media (min-width: 1025px) {
+        .pagination {
+            display: none;
         }
 
-        & > :nth-child(7) {
-            grid-row: span 2;
+        .swiper-wrapper {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: 250px;
+            gap: 20px;
+
+            & > :first-child,
+            & > :nth-child(4),
+            & > :nth-child(6) {
+                grid-row: span 1;
+            }
+
+            & > :nth-child(7) {
+                grid-row: span 2;
+            }
+
+            & > :nth-child(2),
+            & > :nth-child(3) {
+                grid-row: span 2;
+            }
+            & > :nth-child(3),
+            & > :nth-child(5) {
+                grid-column: span 2;
+                grid-row: span 2;
+            }
+
+            & > :last-child {
+                grid-row: span 1;
+            }
+        }
+    }
+}
+
+.table {
+    h2 {
+    }
+
+    .section__body {
+        @media (max-width: 1024px) {
+            overflow-x: scroll;
+            padding-bottom: 5px;
+
+            &::-webkit-scrollbar {
+                height: 0.5em;
+                border-radius: 5px;
+                background-color: #d9d9d9;
+            }
+
+            &::-webkit-scrollbar-track {
+            }
+
+            /* Handle */
+            &::-webkit-scrollbar-thumb {
+                background-color: $black;
+                border-radius: 5px;
+            }
+        }
+    }
+
+    // .table__body
+
+    &__body {
+        width: 100%;
+
+        & > :not(:last-child) {
+            margin-bottom: 10px;
         }
 
-        & > :nth-child(2),
-        & > :nth-child(3) {
-            grid-row: span 2;
+        * {
+            color: $black;
+            @media (max-width: 1024px) {
+                font-size: 16px;
+            }
         }
-        & > :nth-child(3),
-        & > :nth-child(5) {
-            grid-column: span 2;
-            grid-row: span 2;
+
+        @media (max-width: 1024px) {
+            min-width: 1024px;
+        }
+
+        @media (max-width: 768px) {
+            min-width: 672px;
+        }
+    }
+
+    // .table__titles
+
+    &__titles {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        border-radius: 10px;
+        background-color: #d3cecd;
+        padding: 20px;
+        gap: 10px;
+
+        @media (max-width: 1024px) {
+            padding: 10px;
         }
 
         & > :last-child {
-            grid-row: span 1;
+            text-align: right;
         }
+    }
+
+    // .table__title
+
+    &__title {
+        text-transform: uppercase;
+        white-space: nowrap;
+
+        @media (max-width: 1024px) {
+            font-size: 12px;
+        }
+    }
+
+    // .table__item
+
+    &__item {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        border-radius: 10px;
+        background-color: #d3cecd;
+        padding: 20px;
+        gap: 10px;
+
+        @media (max-width: 1024px) {
+            padding: 10px;
+        }
+
+        label {
+            font-weight: 700;
+            @media (max-width: 1024px) {
+                max-width: 160px;
+            }
+        }
+
+        & > :last-child {
+            text-align: right;
+        }
+    }
+}
+
+.section {
+    // .section__container
+
+    &__container {
+    }
+
+    // .section__body
+
+    &__body {
+    }
+}
+.reiews {
+    // .reiews-card
+
+    &-card {
+    }
+}
+._container {
+}
+.reviews {
+    // .reviews__body
+
+    &__body {
+    }
+}
+.swiper {
+    // .swiper-wrapper
+
+    &-wrapper {
+    }
+
+    // .swiper-slide
+
+    &-slide {
+    }
+}
+.reiews-card {
+    // .reiews-card__top
+
+    &__top {
+    }
+
+    // .reiews-card__bottom
+
+    &__bottom {
     }
 }

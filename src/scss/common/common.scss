@@ -134,6 +134,32 @@ input[type="number"] {
     }
 }
 
+.pagination {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    span {
+        border-radius: 50%;
+        width: 10px;
+        height: 10px;
+        background-color: $white;
+
+        &.swiper-pagination-bullet-active {
+            background-color: $accent;
+        }
+    }
+}
+
+.navigation {
+    .prev {
+    }
+    .next {
+    }
+}
+
 ._social {
     display: flex;
     gap: 20px;
@@ -217,6 +243,8 @@ input[type="number"] {
 
         span {
             font-weight: 600;
+            @include adaptive-value("padding-left", 45, 20, 1);
+            @include adaptive-value("padding-right", 45, 20, 1);
         }
 
         @media (max-width: 1024px) {
