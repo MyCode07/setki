@@ -86,6 +86,32 @@ if (sliders.length) {
             })
         }
 
+        if (slider.closest('.components') && window.innerWidth <= 1024) {
+            new Swiper(slider, {
+                modules: [Autoplay, Pagination],
+                slidesPerView: 1,
+                spaceBetween: 10,
+                autoplay: {
+                    delay: 3000,
+                    pauseOnMouseEnter: true
+                },
+                pagination: {
+                    el: pagination,
+                    type: 'bullets',
+                    clickable: true,
+                },
+                breakpoints: {
+                    300: {
+                        spaceBetween: 10,
+                        slidesPerView: 1,
+                    },
+                    769: {
+                        spaceBetween: 10,
+                        slidesPerView: 2,
+                    },
+                }
+            })
+        }
     })
 }
 
