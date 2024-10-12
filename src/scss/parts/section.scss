@@ -605,12 +605,25 @@
         padding: 20px;
         gap: 10px;
 
+        span {
+            display: flex;
+            align-items: center;
+            width: 100%;
+        }
+
+        br {
+            @media (min-width: 1025px) {
+                display: none;
+            }
+        }
+
         @media (max-width: 1024px) {
             padding: 10px;
         }
 
         & > :last-child {
             text-align: right;
+            justify-content: flex-end;
         }
     }
 
@@ -642,7 +655,7 @@
         label {
             font-weight: 700;
             @media (max-width: 1024px) {
-                max-width: 160px;
+                max-width: 180px;
             }
         }
 
@@ -720,5 +733,284 @@
                 grid-row: span 1;
             }
         }
+    }
+}
+
+.production-page-production {
+    .grid {
+        @media (max-width: 1024px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @media (max-width: 768px) {
+            grid-template-columns: 1fr;
+        }
+    }
+    .production-card {
+        @media (max-width: 1024px) {
+            flex-direction: column;
+        }
+
+        .production-card__image {
+            @media (max-width: 1024px) {
+                height: 219px;
+            }
+        }
+
+        .production-card__info {
+            @media (max-width: 1024px) {
+                height: 100%;
+            }
+        }
+    }
+}
+
+.advantages {
+    .section__body {
+        border-radius: 20px;
+        padding: 40px;
+        background-color: #d3cecd;
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @media (max-width: 1024px) {
+            border-radius: 10px;
+            padding: 20px 10px;
+        }
+
+        &:after {
+            position: absolute;
+            content: "";
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url("@img/advantages-bgi.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            pointer-events: none;
+            opacity: 0.2;
+            z-index: 0;
+        }
+    }
+
+    h2 {
+        position: relative;
+        z-index: 2;
+        color: $black;
+    }
+
+    // .advantages__item
+
+    &__item {
+        position: relative;
+        z-index: 2;
+
+        display: flex;
+        align-items: center;
+        gap: 50px;
+        padding: 20px 40px;
+        border-radius: 10px;
+        background-color: $white;
+        max-width: 746px;
+        width: 100%;
+
+        @media (max-width: 1024px) {
+            padding: 10px;
+            gap: 10px;
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 10px;
+        }
+
+        h3 {
+            @media (max-width: 768px) {
+                padding-left: 70px;
+                height: 40px;
+                display: flex;
+                align-items: center;
+            }
+        }
+
+        svg,
+        img {
+            width: 65px;
+            height: 65px;
+            flex: 0 0 auto;
+
+            @media (max-width: 1024px) {
+                width: 40px;
+                height: 40px;
+            }
+
+            @media (max-width: 768px) {
+                position: absolute;
+                left: 10px;
+                top: 10px;
+            }
+        }
+
+        div {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            color: $black;
+        }
+    }
+
+    // .advantages__info
+
+    &__info {
+        position: relative;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        max-width: 800px;
+        margin-top: 40px;
+
+        @media (max-width: 1024px) {
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        * {
+            color: $black;
+            text-align: center;
+        }
+    }
+
+    ._btn {
+        position: relative;
+        z-index: 2;
+
+        @media (min-width: 1025px) {
+            margin-top: 5px;
+        }
+    }
+}
+
+.prices {
+    .table__titles {
+        grid-template-columns: repeat(5, 1fr);
+        @media (max-width: 1024px) {
+            gap: 50px;
+        }
+
+        & > :first-child {
+            grid-column: span 2;
+        }
+    }
+
+    .table__item {
+        grid-template-columns: repeat(5, 1fr);
+
+        @media (max-width: 1024px) {
+            gap: 50px;
+        }
+
+        & > :first-child {
+            grid-column: span 2;
+        }
+    }
+}
+
+.steps {
+    .grid {
+        margin-bottom: 20px;
+    }
+
+    .swiper-wrapper {
+        @media (min-width: 1025px) {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+    }
+}
+
+.terms {
+    .section__body {
+        box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.25);
+        background-color: $white;
+        &:after {
+            display: none;
+        }
+    }
+    // .terms__body
+
+    &__body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 20px;
+        padding: 40px;
+        background-color: #d3cecd;
+        position: relative;
+        width: 100%;
+
+        @media (max-width: 1024px) {
+            padding: 20px 10px 10px 10px;
+            border-radius: 10px;
+        }
+
+        &:after {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url("@img/advantages-bgi.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            pointer-events: none;
+            opacity: 0.2;
+            z-index: 0;
+        }
+
+        p {
+            font-weight: 700;
+        }
+
+        .advantages__item {
+            gap: 40px;
+
+            @media (max-width: 1024px) {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 7px;
+            }
+
+            img,
+            svg {
+                @media (max-width: 1024px) {
+                    position: relative;
+                    left: 0;
+                    top: 0;
+                }
+            }
+        }
+    }
+
+    .subtitle {
+        color: $black;
+        text-align: center;
+        max-width: 587px;
+        width: 100%;
+        margin-bottom: 20px;
+
+        @media (max-width: 1024px) {
+            margin-bottom: 15px;
+        }
+    }
+    ._btn {
+        width: 100%;
+        max-width: 746px;
     }
 }
