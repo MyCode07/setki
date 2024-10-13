@@ -2,16 +2,20 @@
     z-index: 11;
     position: sticky;
     top: 0;
+    width: 100%;
+    // max-width: 1440px;
+    // margin-inline: auto;
 
     &._sticky {
         transition: box-shadow 0.3s ease 0s;
 
         .header__bottom {
-            display: none;
+            // display: none;
         }
     }
 
     // .header__container
+
     &__container {
     }
 
@@ -72,8 +76,10 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 20px;
         position: relative;
+
+        padding-top: 20px;
+        padding-bottom: 20px;
 
         @media (max-width: 1024px) {
             display: none !important;
@@ -141,6 +147,41 @@
             & > :last-child {
                 top: 50%;
                 transform: translate(0, -50%) rotate(45deg);
+            }
+        }
+    }
+
+    nav {
+        width: 100%;
+
+        ul {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+
+            @media (max-width: 1024px) {
+                flex-direction: column;
+            }
+
+            li {
+                flex: 1 1 auto;
+
+                a {
+                    flex: 1 1 auto;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 14px;
+                    border-radius: 30px;
+                    border: 1px solid $white;
+                    text-transform: uppercase;
+
+                    @media (max-width: 1024px) {
+                        width: 196px;
+                    }
+                }
             }
         }
     }
@@ -222,41 +263,6 @@
             width: 19px;
             height: 19px;
             flex: 0 0 auto;
-        }
-    }
-}
-
-.header__menu {
-    width: 100%;
-
-    ul {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 20px;
-
-        @media (max-width: 1024px) {
-            flex-direction: column;
-        }
-
-        li {
-            flex: 1 1 auto;
-
-            a {
-                flex: 1 1 auto;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                padding: 14px;
-                border-radius: 30px;
-                border: 1px solid $white;
-                text-transform: uppercase;
-
-                @media (max-width: 1024px) {
-                    width: 196px;
-                }
-            }
         }
     }
 }

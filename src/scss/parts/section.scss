@@ -154,6 +154,12 @@
             font-size: 15px;
         }
     }
+
+    .grid-6 {
+        @media (max-width: 768px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
 }
 
 .calculator {
@@ -756,6 +762,7 @@
         .production-card__image {
             @media (max-width: 1024px) {
                 height: 219px;
+                max-width: 100%;
             }
         }
 

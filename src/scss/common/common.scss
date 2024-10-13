@@ -57,7 +57,7 @@ h5 {
 }
 
 h1 {
-    @include adaptive-value("font-size", 55, 30, 1);
+    @include adaptive-value("font-size", 54, 30, 1);
     font-weight: 500;
     line-height: 1.2;
     text-decoration-line: underline;
@@ -411,14 +411,14 @@ input[type="number"] {
 }
 
 .text-page {
-
     // .text-page__div
 
     &__div {
         @include adaptive-value("margin-top", 60, 30, 1);
     }
- 
+
     h2 {
+        text-align: left !important;
     }
 
     h1 {
@@ -453,6 +453,28 @@ input[type="number"] {
         &:not(:first-child) {
             margin-top: 1em;
         }
+    }
+
+    ol,
+    ul {
+        padding-left: 1em;
+
+        & > :not(:last-child) {
+            margin-bottom: 10px;
+        }
+    }
+
+    ul li {
+        list-style: initial;
+
+        &::marker {
+            font-size: 0.6em;
+            display: block;
+        }
+    }
+
+    ol li {
+        list-style: inherit;
     }
 }
 
