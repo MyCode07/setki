@@ -253,7 +253,7 @@
                                     <span>слева/справа</span>
                                 </div>
                             </label>
-                            <label for="bottom-top">
+                            <label for="top-bottom">
                                 <input id="top-bottom" name="service" type="radio" value="снизу/сверху">
                                 <div class="variants-card">
                                     <img src="img/icons/calc-2.svg" alt="">
@@ -279,8 +279,8 @@
                     <div class="calculator__size">
                         <h4>Укажите размер проема</h4>
                         <div>
-                            <input type="text" placeholder="Ширина (см):">
-                            <input type="text" placeholder="Высота (см):">
+                            <input type="number" name="shirina" placeholder="Ширина (см):">
+                            <input type="number" name="vysota" placeholder="Высота (см):">
                         </div>
                         <p><b>Чтобы ваша сетка идеально подошла, замер нужно проводить от уплотнительной резинки,
                                 учитывая как длину, так и высоту
@@ -495,57 +495,31 @@
         <div class="section__container _container">
             <div class="section__body">
                 <h2>Сравнение Плиссе <br> с обычной москитной сеткой</h2>
-                <div class="table__body">
-                    <div class="table__titles">
-                        <span class="table__title ">Характеристика</span>
-                        <span class="table__title">Обычная москитная сетка</span>
-                        <span class="table__title ">москитная сетка плиссе</span>
-                    </div>
-                    <div class="table__item">
-                        <label>Дизайн</label>
-                        <span>Стандартный, простая сетка</span>
-                        <span>Стильный, складной механизм Плиссе</span>
-                    </div>
-                    <div class="table__item">
-                        <label>Способ покрытия</label>
-                        <span>Фиксированная, снимается полностью</span>
-                        <span>Складывается и раздвигается по типу гармошки</span>
-                    </div>
-                    <div class="table__item">
-                        <label>Экономия места</label>
-                        <span>Требует места для хранения при снятии</span>
-                        <span>Не требует доролнительного места</span>
-                    </div>
-                    <div class="table__item">
-                        <label>Применение</label>
-                        <span>Подходит для стандартных окон</span>
-                        <span>Подходит для окон, дверей и больших проемов</span>
-                    </div>
-                    <div class="table__item">
-                        <label>Удобство использования</label>
-                        <span>Нужно полностью снимать для доступа</span>
-                        <span>Легко открывается и закрывается одним движением</span>
-                    </div>
-                    <div class="table__item">
-                        <label>Защита от насекомых</label>
-                        <span>Эффективная</span>
-                        <span>Эффективная, с удобством постоянного использования</span>
-                    </div>
-                    <div class="table__item">
-                        <label>Универсальность</label>
-                        <span>Ограничена стандартными размерами</span>
-                        <span>Подходит для нестандартных и больших проемов</span>
-                    </div>
-                    <div class="table__item">
-                        <label>Уход</label>
-                        <span>Нужно снимать для чистки</span>
-                        <span>Легко чистится на месте</span>
-                    </div>
-                    <div class="table__item">
-                        <label>Стоимость</label>
-                        <span>Более доступная</span>
-                        <span>Выше, но с дополнительными преимуществами</span>
-                    </div>
+                <div class="scroll-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Название изделия/продукции/услуги</th>
+                                <th>Ед. измерения</th>
+                                <th>Норма упаковки</th>
+                                <th>Цена за 1 ед.</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Профиль створочный Белый</td>
+                                <td>Погонный метр</td>
+                                <td>300 ₽</td>
+                                <td>65 п.м.</td>
+                            </tr>
+                            <tr>
+                                <td>Профиль створочный Коричневый</td>
+                                <td>Погонный метр</td>
+                                <td>Погонный метр</td>
+                                <td>65 п.м.</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>

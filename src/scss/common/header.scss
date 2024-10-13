@@ -1,9 +1,14 @@
 .header {
     z-index: 11;
+    position: sticky;
+    top: 0;
+
     &._sticky {
-        position: sticky;
-        top: 0;
         transition: box-shadow 0.3s ease 0s;
+
+        .header__bottom {
+            display: none;
+        }
     }
 
     // .header__container

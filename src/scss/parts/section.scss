@@ -167,12 +167,22 @@
     }
 
     label {
+        cursor: pointer;
+
         input {
             display: none;
         }
 
         input[type="color"] {
             display: block;
+        }
+
+        &:has(input:checked) > div {
+            box-shadow: 0px 0px 0px 2px $accent;
+        }
+
+        div {
+            pointer-events: none;
         }
     }
 
@@ -453,7 +463,6 @@
 }
 
 .faq {
-
     h3 {
         @media (max-width: 768px) {
             font-size: 18px;
@@ -593,10 +602,13 @@
     h2 {
     }
 
-    .section__body {
+    .scroll-wrapper {
         @media (max-width: 1024px) {
             overflow-x: scroll;
             padding-bottom: 5px;
+            margin-left: -15px;
+            padding-inline: 15px;
+            width: 100vw;
 
             &::-webkit-scrollbar {
                 height: 0.5em;
@@ -615,97 +627,42 @@
         }
     }
 
-    // .table__body
-
-    &__body {
+    table {
         width: 100%;
+        min-width: 700px;
+        text-align: left;
+        color: $black;
+        border-collapse: separate;
+        border-spacing: 0 10px;
 
-        & > :not(:last-child) {
-            margin-bottom: 10px;
+        tr {
+            background-color: #d3cecd;
         }
 
-        * {
-            color: $black;
-            @media (max-width: 1024px) {
-                font-size: 16px;
+        th {
+            text-transform: uppercase;
+            font-weight: 400;
+        }
+
+        th,
+        td {
+            padding: 20px;
+
+            @media (max-width: 768px) {
+                padding: 10px;
+            }
+
+            &:first-child {
+                border-radius: 10px 0 0 10px;
+            }
+
+            &:last-child {
+                border-radius: 0 10px 10px 0;
             }
         }
 
-        @media (max-width: 1024px) {
-            min-width: 1024px;
-        }
-
-        @media (max-width: 768px) {
-            min-width: 672px;
-        }
-    }
-
-    // .table__titles
-
-    &__titles {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        border-radius: 10px;
-        background-color: #d3cecd;
-        padding: 20px;
-        gap: 10px;
-
-        span {
-            display: flex;
-            align-items: center;
-            width: 100%;
-        }
-
-        br {
-            @media (min-width: 1025px) {
-                display: none;
-            }
-        }
-
-        @media (max-width: 1024px) {
-            padding: 10px;
-        }
-
-        & > :last-child {
-            text-align: right;
-            justify-content: flex-end;
-        }
-    }
-
-    // .table__title
-
-    &__title {
-        text-transform: uppercase;
-        white-space: nowrap;
-
-        @media (max-width: 1024px) {
-            font-size: 12px;
-        }
-    }
-
-    // .table__item
-
-    &__item {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        border-radius: 10px;
-        background-color: #d3cecd;
-        padding: 20px;
-        gap: 10px;
-
-        @media (max-width: 1024px) {
-            padding: 10px;
-        }
-
-        label {
+        td {
             font-weight: 700;
-            @media (max-width: 1024px) {
-                max-width: 180px;
-            }
-        }
-
-        & > :last-child {
-            text-align: right;
         }
     }
 }
