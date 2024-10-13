@@ -453,9 +453,39 @@
 }
 
 .faq {
+
+    h3 {
+        @media (max-width: 768px) {
+            font-size: 18px;
+        }
+    }
+
+    &.pages-form {
+        .section__body {
+            background-color: $white;
+        }
+
+        .form {
+            border: unset;
+        }
+
+        ._map {
+            width: 50%;
+            border-radius: 20px;
+            overflow: hidden;
+
+            @media (max-width: 1024px) {
+                border-radius: 10px;
+                width: 100%;
+                height: 458px;
+            }
+        }
+    }
+
     .section__body {
         border-radius: 20px;
         background-color: #d3cecd;
+        overflow: hidden;
 
         @media (max-width: 1024px) {
             border-radius: 10px;
@@ -486,6 +516,18 @@
 
         @media (max-width: 1024px) {
             padding: 20px 10px;
+        }
+    }
+
+    iframe {
+        width: 100%;
+        height: 100%;
+        filter: grayscale(100%);
+
+        border-radius: 20px;
+        overflow: hidden;
+        @media (max-width: 1024px) {
+            border-radius: 10px;
         }
     }
 }
@@ -1022,6 +1064,28 @@
         @media (max-width: 1024px) {
             gap: 10px;
             flex-wrap: wrap;
+        }
+    }
+}
+
+.map {
+    .section__body {
+        border-radius: 20px;
+        overflow: hidden;
+        height: 458px;
+    }
+
+    div {
+        height: 100%;
+    }
+
+    iframe {
+        width: 100%;
+        height: 100%;
+
+        filter: grayscale(100%);
+        @media (max-width: 1024px) {
+            border-radius: 10px;
         }
     }
 }

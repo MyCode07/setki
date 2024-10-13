@@ -10,6 +10,62 @@
     }
 
     &.pages-hero {
+        .pages-hero__contacts {
+            position: relative;
+            z-index: 2;
+            border-radius: 40px;
+            padding: 40px;
+            background-color: $white;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            @media (max-width: 1024px) {
+                padding: 15px;
+                border-radius: 20px;
+                gap: 15px;
+            }
+
+            .contact {
+                display: flex;
+                gap: 20px;
+
+                @media (max-width: 1024px) {
+                    gap: 10px;
+                }
+
+                div {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+
+                    span {
+                        @include adaptive-value("font-size", 26, 20, 1);
+                        font-weight: 700;
+                    }
+                }
+            }
+
+            img,
+            svg {
+                width: 40px;
+                height: 40px;
+
+                @media (max-width: 1024px) {
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+
+            span {
+                color: $black;
+            }
+
+            p {
+                color: #616465;
+            }
+        }
+
         .hero__content {
             display: flex;
             flex-direction: column;
@@ -71,10 +127,9 @@
         p {
             margin-top: 25px;
             margin-bottom: 30px;
-
+            max-width: 587px;
             @media (max-width: 1024px) {
                 margin: 15px 0;
-                max-width: 75%;
                 width: 100%;
             }
         }
@@ -200,6 +255,38 @@
 
             @media (max-width: 1024px) {
                 height: 295px;
+            }
+        }
+    }
+
+    &.delivery-payment-page-hero {
+        .hero__body {
+            @media (min-width: 1025px) {
+                max-height: 456px;
+            }
+        }
+
+        .hero__content {
+            @media (max-width: 1024px) {
+                padding: 43px 0;
+            }
+
+            br {
+                @media (min-width: 1025px) {
+                    display: none;
+                }
+            }
+
+            h1 {
+                @media (max-width: 1024px) {
+                    text-align: center;
+                }
+            }
+        }
+
+        .hero__image {
+            @media (max-width: 1024px) {
+                max-height: 239px;
             }
         }
     }
