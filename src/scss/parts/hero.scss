@@ -345,4 +345,12 @@
             margin-left: -15px;
         }
     }
+
+    // .hero-404
+
+    &-404 {
+        @media (max-width: 1024px) {
+            padding-bottom: 20px;
+        }
+    }
 }

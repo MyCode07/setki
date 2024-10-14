@@ -446,7 +446,9 @@
             height: 219px;
         }
 
-        img {
+        img,
+        picture {
+            border-radius: 10px;
             height: 100%;
             object-fit: cover;
         }
@@ -484,6 +486,8 @@
 
     &__image {
         @include adaptive-value("height", 206, 160, 1);
+
+        picture,
         img {
             height: 100%;
             object-fit: cover;
