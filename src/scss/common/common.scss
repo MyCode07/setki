@@ -237,7 +237,7 @@ input[type="number"] {
     padding-left: 20px;
     gap: 20px;
 
-    span {
+    span:not(.wpcf7-spinner) {
         color: currentColor;
         font-weight: 600;
         text-transform: uppercase;
@@ -282,7 +282,8 @@ input[type="number"] {
             width: 100%;
             padding: 5px;
         }
-        span {
+
+        span:not(.wpcf7-spinner) {
             font-weight: 600;
             @include adaptive-value("padding-left", 45, 20, 1);
             @include adaptive-value("padding-right", 45, 20, 1);
@@ -369,17 +370,15 @@ input[type="number"] {
     }
 }
 
-._text-box {
-    p {
-        max-width: 846px;
-        padding: 20px 0;
-        margin-inline: auto;
-        border-top: 1px solid $white;
-        border-bottom: 1px solid $white;
+._text-box .text {
+    max-width: 846px;
+    padding: 20px 0;
+    margin-inline: auto;
+    border-top: 1px solid $white;
+    border-bottom: 1px solid $white;
 
-        @media (max-width: 1024px) {
-            padding: 10px 0;
-        }
+    @media (max-width: 1024px) {
+        padding: 10px 0;
     }
 }
 
@@ -476,6 +475,11 @@ input[type="number"] {
     ol li {
         list-style: inherit;
     }
+}
+
+.swiper-slide picture {
+    height: 100%;
+    object-fit: cover;
 }
 
 .pages-menu {

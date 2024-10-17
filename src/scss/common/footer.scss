@@ -44,9 +44,7 @@
         }
     }
 
-    // .footer__menu
-
-    &__menu {
+    nav {
         @media (max-width: 1024px) {
             place-self: normal;
         }

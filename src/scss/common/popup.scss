@@ -100,13 +100,6 @@
     .form {
         padding: 0 !important;
         border: unset;
-
-        label {
-            color: $black;
-            font-size: 14px;
-            margin-bottom: 15px;
-            display: block;
-        }
     }
 
     &#thanks,
@@ -115,6 +108,25 @@
             @media (min-width: 769px) {
                 max-width: 750px;
             }
+        }
+    }
+
+    &#stock {
+        display: block;
+
+        .popup__body {
+            margin-inline: auto;
+            max-width: 1280px;
+        }
+
+        h2 {
+            text-align: center;
+            @include adaptive-value("margin-bottom", 30, 15, 1);
+        }
+
+        .subtitle {
+            text-align: center;
+            margin-inline: auto;
         }
     }
 }

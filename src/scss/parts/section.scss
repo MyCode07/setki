@@ -475,6 +475,18 @@
         }
     }
 
+    // .faq-text
+
+    &-text {
+        color: $black;
+        @include adaptive-value("font-size", 26, 16, 1);
+        font-weight: 400;
+
+        @media (max-width: 1024px) {
+            text-align: center;
+        }
+    }
+
     &.pages-form {
         .section__body {
             background-color: $white;
