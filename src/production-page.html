@@ -1,0 +1,116 @@
+@@include('./html/head.html', {
+"title":"Продукция",
+})
+
+@@include('./html/header.html')
+
+<main>
+    <section class="hero pages-hero">
+        <div class="bgi">
+            <img src="img/hero-bgi.png" alt="">
+        </div>
+        <div class="hero__container _container">
+            <div class="hero__body">
+                <div class="hero__content">
+                    <h1><b>Продукция:</b> качественные москитные сетки Плиссе и комплектующие</h1>
+                    <p>
+                        На странице <b>«Продукция»</b> представлено разнообразие москитных сеток Плиссе и комплектующих,
+                        которые помогут вам обеспечить
+                        комфорт и защиту вашего дома от насекомых.
+                        <br><br>
+                        Мы предлагаем высококачественные товары, которые идеально подходят для окон и дверей, сочетая
+                        функциональность с
+                        эстетикой.
+                    </p>
+                </div>
+                <div class="hero__image _hero-right">
+                    <img src="img/hero.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section production-page-production">
+        <div class="section__container _container">
+            <div class="section__body">
+                <h2>Наша продукция</h2>
+                <div class="grid grid-3">
+                    <a href="" class="production-card">
+                        <div class="production-card__image">
+                            <img src="img/production-1.png" alt="">
+                        </div>
+                        <div class="production-card__info">
+                            <h3>Москитные сетки Плиссе</h3>
+                            <p>Москитные сетки Плиссе — это идеальное решение для защиты от насекомых. Они компактны,
+                                легко устанавливаются и не
+                                занимают много места. Сетки доступны в различных цветах и размерах, что позволяет
+                                подобрать идеальный вариант для любого
+                                интерьера.</p>
+                        </div>
+                    </a>
+                    <a href="" class="production-card">
+                        <div class="production-card__image">
+                            <img src="img/production-1.png" alt="">
+                        </div>
+                        <div class="production-card__info">
+                            <h3>Комплектующие для сеток</h3>
+                            <p>Мы предлагаем широкий ассортимент комплектующих: створочные и рамные профили, пороги,
+                                фурнитуру и сетки. Все элементы
+                                выполнены из качественных материалов, что гарантирует их долговечность и надежность.</p>
+                        </div>
+                    </a>
+                    <a href="" class="production-card">
+                        <div class="production-card__image">
+                            <img src="img/production-1.png" alt="">
+                        </div>
+                        <div class="production-card__info">
+                            <h3>Оборудование для установки</h3>
+                            <p>Для удобства установки москитных сеток мы предлагаем специализированное оборудование,
+                                которое сделает процесс сборки
+                                легким и быстрым.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    @@include('./html/advantages.html')
+
+    <section class="section prices table">
+        <div class="section__container _container">
+            <div class="section__body">
+                <h2>Цены</h2>
+                <div class="scroll-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Название изделия/продукции/услуги</th>
+                                <th>Ед. измерения</th>
+                                <th>Норма упаковки</th>
+                                <th>Цена за 1 ед.</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Профиль створочный Белый</td>
+                                <td>Погонный метр</td>
+                                <td>300 ₽</td>
+                                <td>65 п.м.</td>
+                            </tr>
+                            <tr>
+                                <td>Профиль створочный Коричневый</td>
+                                <td>Погонный метр</td>
+                                <td>Погонный метр</td>
+                                <td>65 п.м.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+@@include('./html/footer.html')
+@@include('./html/scripts.html')

@@ -1,0 +1,129 @@
+@@include('./html/head.html', {
+"title":"Контакты",
+})
+
+@@include('./html/header.html')
+
+<main>
+
+    <section class="hero pages-hero contacts-hero">
+        <div class="bgi">
+            <img src="img/hero-bgi.png" alt="">
+        </div>
+        <div class="hero__container _container">
+            <div class="hero__body">
+                <div class="hero__content">
+                    <h1>КОНТАКТЫ</h1>
+                    <p>
+                        Мы всегда готовы ответить на ваши вопросы и помочь вам в выборе идеальных москитных сеток Плиссе
+                        и комплектующих. На
+                        этой странице вы найдете все необходимые контакты для связи с нашей компанией.
+                    </p>
+                </div>
+                <div class="pages-hero__contacts _hero-right">
+                    <a href="tel:+7800555353" target="_blank" class="contact">
+                        <img src="@img/icons/tel-red.svg" alt="">
+                        <div>
+                            <span>8 800 555 35 35</span>
+                            <p>Позвоните нам, и наши менеджеры с радостью предоставят вам всю необходимую информацию
+                                и консультацию по продуктам.</p>
+                        </div>
+
+                    </a>
+                    <a href="mailto:123456@info.ru" target="_blank" class="contact">
+                        <img src="@img/icons/mail-red.svg" alt="">
+                        <div>
+                            <span>123456@info.ru</span>
+                            <p>Напишите нам на почту, и мы ответим на ваши запросы в кратчайшие сроки.
+                            </p>
+                        </div>
+                    </a>
+                    </a>
+                    <div class="contact">
+                        <img src="@img/icons/geo-red.svg" alt="">
+                        <div>
+                            <span>г. Москва, ул. Улица, д.1, офис 1</span>
+                            <p>Приходите к нам в офис, где вы сможете ознакомиться с образцами продукции и получить
+                                консультацию от специалистов.</p>
+                        </div>
+                    </div>
+                    <div class="contact">
+                        <img src="@img/icons/time-red.svg" alt="">
+                        <div>
+                            <span>Пн-Пт: <br> с 10:00 до 19:00</span>
+                            <p>
+                                Мы работаем с понедельника по пятницу с 9:00 до 18:00, чтобы быть доступными для вас
+                                в удобное время
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section _text-box">
+        <div class="section__container _container">
+            <div class="section__body">
+                <h2>Не стесняйтесь <br> обращаться к нам!</h2>
+                <p>
+                    Мы ценим каждого клиента и стремимся обеспечить высокое качество обслуживания. Свяжитесь с нами уже
+                    сегодня, и мы
+                    поможем вам найти идеальные решения для вашего дома или бизнеса!
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section faq pages-form">
+        <div class="section__container _container">
+            <div class="section__body">
+                <div class="section__flex">
+                    <form action="" method="post" class="form">
+                        <h3>Есть вопрос? Нужно оформить заказ? Напишите нам - всё объясним и поможем с выбором</h3>
+                        <div class="form__item" data-required>
+                            <input type="text" name="name" placeholder="Имя">
+                        </div>
+                        <div class="form__item" data-required>
+                            <input type="text" name="phone" class="_mask-phone" placeholder="Телефон">
+                        </div>
+                        <div class="form__item" data-required>
+                            <textarea name="msg" id="msg" placeholder="Ваш вопрос"></textarea>
+                        </div>
+                        <div class="form__bottom">
+                            <button class="_btn _btn-big _btn-black">
+                                <span>Отправить</span>
+                                <div>
+                                    <svg width="12" height="12" viewBox="0 0 12 12">
+                                        <use xlink:href="img/svg/icons.svg#btn-arrow"></use>
+                                    </svg>
+                                </div>
+                            </button>
+                        </div>
+                    </form>
+                    <div class="_map" style="position:relative;overflow:hidden; ">
+                        <a href="https://yandex.ru/maps?utm_medium=mapframe&utm_source=maps"
+                            style="color:#eee;font-size:12px;position:absolute;top:0px;">Яндекс Карты
+                        </a>
+                        <a href="https://yandex.ru/maps/geo/moskva/53000094/?ll=37.385439%2C55.584227&utm_medium=mapframe&utm_source=maps&z=9.23"
+                            style="color:#eee;font-size:12px;position:absolute;top:14px;">Москва —
+                            Яндекс Карты
+                        </a>
+                        <iframe
+                            src="https://yandex.ru/map-widget/v1/?ll=37.385439%2C55.584227&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1MzAwMDA5NBIa0KDQvtGB0YHQuNGPLCDQnNC-0YHQutCy0LAiCg2GeBZCFQEGX0I%2C&z=9.23"
+                            frameborder="1" allowfullscreen="true" style="position:relative;">
+                        </iframe>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+</main>
+
+@@include('./html/footer.html')
+@@include('./html/scripts.html')

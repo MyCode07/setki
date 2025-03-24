@@ -1,0 +1,133 @@
+@@include('./html/head.html', {
+"title":"Акции",
+})
+
+@@include('./html/header.html')
+
+<main>
+    <section class="hero pages-hero stock-hero">
+        <div class="hero__container ">
+            <div class="hero__body">
+                <!-- <div class="hero__image _desktop">
+                    <img src="img/stock.png" alt="">
+                </div> -->
+                <div class="hero__content">
+                    <h1>Акции</h1>
+                    <p>
+                        Добро пожаловать на страницу <b> акций нашей компании!</b> Здесь вы найдете актуальные
+                        предложения и специальные скидки на
+                        москитные сетки Плиссе и комплектующие к ним.
+                        <br><br>
+                        Мы постоянно обновляем наши акции, чтобы наши клиенты могли получать самые выгодные условия для
+                        покупки
+                        высококачественной продукции.
+                    </p>
+                </div>
+                <!-- <div class="hero__image">
+                    <img src="img/stock.png" alt="">
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    @@include('./html/advantages.html')
+
+    <section class="section steps">
+        <div class="section__container _container">
+            <div class="section__body">
+                <h2>Как воспользоваться акциями?</h2>
+                <div class="grid grid-3">
+                    <div class="step-card">
+                        <span>01</span>
+                        <img src="img/icons/step-arrow.svg" alt="">
+                        <p>Ознакомьтесь с текущими предложениями на этой странице.</p>
+                    </div>
+                    <div class="step-card">
+                        <span>02</span>
+                        <img src="img/icons/step-arrow.svg" alt="">
+                        <p>Выберите интересующий вас товар и узнайте подробности о скидках.</p>
+                    </div>
+                    <div class="step-card">
+                        <span>03</span>
+                        <img src="img/icons/step-last-arrow.svg" alt="">
+                        <p>Свяжитесь с нашими менеджерами, чтобы уточнить условия покупки и доставки.</p>
+                    </div>
+                </div>
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="" class="stock-card">
+                                <div class="stock-card__bottom">
+                                    <img src="img/step.png" alt="">
+                                    <div class="stock-card__info">
+                                        <label>- 5 %</label>
+                                        <h3>Скидки на летний комфорт!</h3>
+                                        <button class="_btn">
+                                            <span>Ознакомиться</span>
+                                            <div>
+                                                <svg width="12" height="12" viewBox="0 0 12 12">
+                                                    <use xlink:href="img/svg/icons.svg#btn-arrow"></use>
+                                                </svg>
+                                            </div>
+                                        </button>
+                                    </div>
+
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="" class="stock-card">
+
+                                <div class="stock-card__bottom">
+                                    <img src="img/step.png" alt="">
+                                    <div class="stock-card__info">
+
+                                        <label>- 5 %</label>
+                                        <h3>Скидки на летний комфорт!</h3>
+                                        <button class="_btn">
+                                            <span>Ознакомиться</span>
+                                            <div>
+                                                <svg width="12" height="12" viewBox="0 0 12 12">
+                                                    <use xlink:href="img/svg/icons.svg#btn-arrow"></use>
+                                                </svg>
+                                            </div>
+                                        </button>
+                                    </div>
+                                </div>
+                            </a>
+
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="" class="stock-card">
+                                <div class="stock-card__bottom">
+                                    <img src="img/step.png" alt="">
+                                    <div class="stock-card__info">
+                                        <label>до - 10 %</label>
+                                        <h3>Скидки на летний комфорт!</h3>
+                                        <button class="_btn">
+                                            <span>Ознакомиться</span>
+                                            <div>
+                                                <svg width="12" height="12" viewBox="0 0 12 12">
+                                                    <use xlink:href="img/svg/icons.svg#btn-arrow"></use>
+                                                </svg>
+                                            </div>
+                                        </button>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    @@include('./html/faq.html')
+
+</main>
+
+@@include('./html/footer.html')
+@@include('./html/scripts.html')
